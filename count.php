@@ -13,20 +13,7 @@ class AccessRanking {
 	public $resultWR;  // IN OUT の集計
 	public $resultWRR;  // IN OUT の集計
 	private $in_out;
-	public $return_cate;  //JSON型から戻した配列
-	public $cate_c;  //登録カテゴリーの個数
-	private $ip_int;  //数字にしたipアドレス
-	public $result_c_cA;  //カテゴリーAのランキング
-	public $result_c_cB;  //カテゴリーBのランキング
-	// /public $result_c_cC;  //カテゴリーCのランキング
-	public $rank_log;
-	public $rank_logg;
-	public $rank_log_cate;
-	public $rank_logg_cate;
-	public $totalRank_log;
-	//public $totalRank_log_cate;
-	public $file_time;  //failの更新日時
-	public $week_ago;  //１週間前の時刻
+
 
 
 	public function __construct() {
@@ -190,36 +177,17 @@ class AccessRanking {
 
 	// カテゴリー・・・ファイルに保存されたIDと一致するIDを照らし合わせ、保存されたIDが何番目の配列かをサーチする。 
 	public function rankSearchWeekAgoCate($site_id, $i) {
-		//array_searchは結果をintで返す。
-		$index_id = array_search($site_id, $this->rank_log_cate[$i]);
-		// array_searchが失敗するとfalseを返す。返り値が0だとfalseと誤解されるため、条件式では===を使う。
-		if ($index_id === FALSE) {
-			$index_id = -1;
-		}
-		return $index_id;
-	}
+		sadfasdfdsafdsafdsafa
 
 	// カテゴリー・・・ファイルに保存されたIDと一致するIDを照らし合わせ、保存されたIDが何番目の配列かをサーチする。
 	public function rankSearchTwoWeekAgoCate($site_id, $i) {
-		//array_searchは結果をintで返す。
-		$index_id = array_search($site_id, $this->rank_logg_cate[$i]);
-		// array_searchが失敗するとfalseを返す。返り値が0だとfalseと誤解されるため、条件式では===を使う。
-		if ($index_id === FALSE) {
-			$index_id = -1;
-		}
-		return $index_id;
+		safadsfafdadsfas
 	}
 
 
 	// トータル・・・ファイルに保存されたIDと一致するIDを照らし合わせ、保存されたIDが何番目の配列かをサーチする。
 	public function TotalRankSearch($site_id) {
-		//array_searchは結果をintで返す。
-		$index_id = array_search($site_id, $this->totalRank_log);
-		// array_searchが失敗するとfalseを返す。返り値が0だとfalseと誤解されるため、条件式では===を使う。
-		if ($index_id === FALSE) {
-			$index_id = -1;
-		}
-		return $index_id;
+		dfnkjsafidsifhsdajikfidsaufkjdsafuiasuddddd
 	}
 
 }
